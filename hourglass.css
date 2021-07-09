@@ -1,0 +1,32 @@
+/* hourglass SVG animation */
+svg {
+  margin: auto;
+  width: 150px;
+  height: auto;
+  display: block;
+}
+/* animate the svg to rotate from the center */
+svg {
+  animation: rotateHourglass 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+/* animate the rectangle describing the sand toward the bottom */
+#sand {
+  animation: moveSand 10s ease-in-out infinite;
+}
+/* by repeating the animation from the original values, the idea is to give the illusion of a constant rotation clockwise */
+@keyframes rotateHourglass {
+  /* 95% to fill the hourglass, 5% to rotate the shape around its center  */
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveSand {
+  75%,
+  100% {
+    transform: translateY(50px);
+  }
+}

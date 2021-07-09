@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JDC Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hourglass.css" />
+  </head>
+  <body>
+    <div>
+      <header class="w-full p-7 flex justify-between items-center">
+        <h1>JDC Digital</h1>
+        <nav>
+          <ul class="w-auto flex">
+            <li class="list-none black no-underline">
+              <a href="https://jdc.dev">Founder</a>
+            </li>
+            <li class="list-none black no-underline">
+              <a href="https://twitter.com/jdcdigitalhq">Twitter</a>
+            </li>
+            <li class="list-none black no-underline">
+              <a href="https://instagram.com/jdcdigitalhq">Instagram</a>
+            </li>
+            <li class="list-none black no-underline">
+              <a href="https://github.com/jdcdigital">Github</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="flex flex-col items-center w-full">
+        <svg viewBox="0 0 70 100" width="70" height="100">
+          <defs>
+            <!-- path describing the outline of the hourglass -->
+            <path
+              id="hourglass"
+              d="M 5 5 h 60 q 0 22.5 -28 45 28 22.5 28 45 h -60 q 0 -22.5 28 -45 -28 -22.5 -28 -45z"
+            />
+            <!-- create a clip with the outline of the paragraph -->
+            <clipPath id="clip--hourglass">
+              <use href="#hourglass" />
+            </clipPath>
+          </defs>
+          <!-- rectangle translated toward the bottom
+          clipped to show only the element within the boundaries of the hourglass
+          -->
+          <g clip-path="url(#clip--hourglass)">
+            <rect
+              id="sand"
+              width="70"
+              height="50"
+              fill="hsl(210, 40%, 20%)"
+              stroke="none"
+            />
+          </g>
+          <!-- drawing using the outline of the hourglass and other elements to depict a stylish time-keeper -->
+          <g
+            stroke="hsl(240, 15%, 5%)"
+            stroke-width="4"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <use href="#hourglass" />
+            <path d="M 5 5 v 90" />
+            <path d="M 65 5 v 90" />
+          </g>
+          <g fill="hsl(240, 15%, 5%)" stroke="none">
+            <rect width="70" height="5" />
+            <rect width="70" height="5" y="95" />
+            <circle r="5" cx="5" cy="50" />
+            <circle r="5" cx="65" cy="50" />
+          </g>
+        </svg>
+        <h1>Coming Soon</h1>
+        <h2>JDC Digital LLC</h2>
+        <p>A digital solutions agency.</p>
+      </main>
+
+      <footer>
+        <span class="copyright">&copy; 2021 - JDC Digital LLC</span>
+      </footer>
+    </div>
+  </body>
+</html>

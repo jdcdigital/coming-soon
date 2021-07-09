@@ -1,0 +1,26 @@
+{
+  "name": "jdc-digital-coming-soon",
+  "version": "1.0.0",
+  "description": "Coming soon page for JDC Digital LLC",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss build main.css -o output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDC-Digital/coming-soon.git"
+  },
+  "author": "Jacob D. Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JDC-Digital/coming-soon/issues"
+  },
+  "homepage": "https://github.com/JDC-Digital/coming-soon#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "prettier": "2.3.2",
+    "tailwindcss": "^2.1.1"
+  }
+}
